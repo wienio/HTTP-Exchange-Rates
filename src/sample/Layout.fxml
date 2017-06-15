@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <DatePicker fx:id="startDate" layoutX="7.0" layoutY="17.0" prefHeight="22.0" prefWidth="174.0" />
+      <DatePicker fx:id="endDate" layoutX="7.0" layoutY="69.0" prefHeight="25.0" prefWidth="174.0" />
+      <Button layoutX="338.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleReadCoursesButton" prefHeight="61.0" prefWidth="144.0" text="Pokaż kursy" />
+      <Label layoutX="14.0" text="Od:" />
+      <Label layoutX="15.0" layoutY="49.0" text="Do:" />
+      <Label fx:id="maxValue" layoutX="602.0" layoutY="9.0" text="Największa wartość" />
+      <Label fx:id="maxPLN" layoutX="608.0" layoutY="26.0" text="-" />
+      <Label fx:id="minValue" layoutX="849.0" layoutY="9.0" text="Najmniejsza wartość" />
+      <Label fx:id="minPLN" layoutX="855.0" layoutY="26.0" text="-" />
+      <ComboBox fx:id="baseComboBox" layoutX="213.0" layoutY="17.0" prefHeight="25.0" prefWidth="96.0" />
+      <Label layoutX="213.0" layoutY="1.0" text="Baza:" />
+      <ComboBox fx:id="secondComboBox" layoutX="213.0" layoutY="69.0" prefHeight="25.0" prefWidth="96.0" />
+      <Label layoutX="213.0" layoutY="49.0" text="Waluta:" />
+   </children>
+</AnchorPane>
